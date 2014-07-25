@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_ourshop_it_domain_Transactions" modelAttribute="transactions" path="/transactionses" versionField="Version" z="d1Y2svwETOvr9ER8V3q+mMxoJTw=">
+        <field:datetime dateTimePattern="${transactions_transactiondate_date_format}" field="transactionDate" id="c_com_ourshop_it_domain_Transactions_transactionDate" z="NeYFJAJaANeLDvcp9J3fXL0R1RU="/>
+        <field:select field="party" id="c_com_ourshop_it_domain_Transactions_party" itemValue="id" items="${partys}" path="/partys" z="biJdYOXoSWskF8eZ6CIWyWwDc7U="/>
+        <field:select field="account" id="c_com_ourshop_it_domain_Transactions_account" itemValue="id" items="${accounts}" path="/accounts" z="Y1t1dKMtkbp5g9frXPtXL5APnIc="/>
+        <field:input field="type" id="c_com_ourshop_it_domain_Transactions_type" required="true" z="dpf8/AVVZ1owR91u4AAjHRh7+eY="/>
+        <field:select field="inventories" id="c_com_ourshop_it_domain_Transactions_inventories" itemValue="id" items="${transactioninventorys}" multiple="true" path="/transactioninventorys" z="6qexU5Fl6tn7tFNDUgzUtETBC1Q="/>
+        <field:input field="description" id="c_com_ourshop_it_domain_Transactions_description" z="QxRQrwibGFKicZGnJcy1Ditk5cg="/>
+        <field:input field="totalAmount" id="c_com_ourshop_it_domain_Transactions_totalAmount" required="true" validationMessageCode="field_invalid_number" z="MZgrDDT5GcJ6/9WVnKtKLBSyx5s="/>
+        <field:input field="advanceAmount" id="c_com_ourshop_it_domain_Transactions_advanceAmount" validationMessageCode="field_invalid_number" z="cZzxYSrVXRGz9ObkCuWdIcxcXto="/>
+        <field:input field="discountAmount" id="c_com_ourshop_it_domain_Transactions_discountAmount" validationMessageCode="field_invalid_number" z="cuCHCEKeREkInKbZwon4IzfUxhA="/>
+        <field:input field="dueAmount" id="c_com_ourshop_it_domain_Transactions_dueAmount" validationMessageCode="field_invalid_number" z="WW7N/fXCreZvH5O5VRkaTOFL8wY="/>
+    </form:update>
+</div>

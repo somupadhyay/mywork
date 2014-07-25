@@ -1,0 +1,97 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-09-12 20:18:21
+project --topLevelPackage com.ourshop.it --projectName ourshop --java 6 --packaging WAR
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-09-12 20:18:44
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-09-12 22:03:03
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class com.ourshop.it.domain.Inventory
+field string --fieldName itemName
+field string --fieldName itemDescription
+field number --fieldName itemCost --type java.lang.Float
+entity jpa --class com.ourshop.it.domain.Account
+field string --fieldName accountName --notNull 
+field string --fieldName accountDescription
+field string --fieldName category
+entity jpa --class com.ourshop.it.domain.Party
+field string --fieldName partyName --notNull 
+field string --fieldName govtRegistration
+field string --fieldName address
+field string --fieldName area
+field string --fieldName contactPerson --notNull 
+field string --fieldName mobile
+field string --fieldName phone
+field string --fieldName email
+field string --fieldName alternateEmail
+entity jpa --class com.ourshop.it.domain.TransactionInventory
+field number --fieldName quantity --type java.lang.Float --notNull 
+field number --fieldName rate --type java.lang.Float --notNull 
+entity jpa --class ~.domain.Account --testAutomatically 
+entity jpa --class ~.domain.Inventory --testAutomatically 
+entity jpa --class ~.domain.Party --testAutomatically 
+entity jpa --class ~.domain.TransactionInventory --testAutomatically 
+field set item --type ~.domain.Inventory 
+// [failed] entity jpa --class com.ourshop.it.Transaction --testAutomatically 
+// [failed] entity jpa --class com.ourshop.it.domain.Transaction --testAutomatically
+entity jpa --class com.ourshop.it.domain.Transactions --testAutomatically
+// [failed] field date --fieldName date --type java.util.Date
+field date --fieldName transactionDate --type java.util.Date
+field reference --fieldName party --type ~.domain.Party
+field reference --fieldName account --type ~.domain.Account
+field string --fieldName type --notNull 
+field set --fieldName inventories --type ~.domain.TransactionInventory
+field string --fieldName description
+field number --fieldName totalAmount --type java.lang.Double --notNull 
+field number --fieldName advanceAmount --type java.lang.Double 
+field number --fieldName discountAmount --type java.lang.Double
+perform tests
+web mvc setup
+web mvc all --package com.ourshop.it.web
+security setup
+focus --class ~.domain.Account
+field reference --fieldName transactions --type ~.domain.Transactions
+focus --class ~.domain.Party
+field reference --fieldName transactions --type ~.domain.Transactions
+focus --class ~.domain.Inventory 
+field reference --fieldName transactionInventory --type ~.domain.TransactionInventory
+perform tests 
+perform clean 
+perform package 
+focus --class ~.domain.Inventory 
+focus --class ~.domain.Inventory
+field string --fieldName item --notNull 
+field string --fieldName itemDescription
+field number --fieldName itemCost --type java.lang.Double
+focus --class ~.domain.Account
+field string --fieldName accountName --notNull 
+field string --fieldName accountDescription 
+field string --fieldName category
+focus --class ~.domain.Party
+field string --fieldName partyName --notNull 
+field string --fieldName govtRegistration
+field string --fieldName address
+field string --fieldName area
+field string --fieldName contactPerson --notNull 
+field string --fieldName partyType --notNull 
+field string --fieldName mobile
+field string --fieldName phone
+field string --fieldName email
+field string --fieldName alternateEmail
+focus --class ~.domain.TransactionInventory
+field number --fieldName quantity --type java.lang.Double --notNull
+field number --fieldName rate --type java.lang.Double --notNull
+field set --fieldName transactions --type ~.domain.Transactions
+field reference --fieldName transactions --type ~.domain.Transactions --notNull 
+field set --fieldName items --type ~.domain.Inventory
+perform tests
+perform package
+perform package
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-09-12 23:38:36
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-09-15 11:22:56
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-09-28 14:39:32
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-09-30 10:00:53
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-08 19:21:45
+web mvc controller --class com.ourshop.it.web.ReportController
+help 
+focus --class ~.web.ReportController
+hint 
+hint web mvc
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-08 22:58:43

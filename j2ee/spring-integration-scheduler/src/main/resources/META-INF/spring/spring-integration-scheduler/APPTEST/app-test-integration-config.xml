@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:int="http://www.springframework.org/schema/integration"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<int:channel id="inbound.channel.start" />
+	<int:channel id="inbound.channel.process" />
+	<int:channel id="inbound.channel.end" />
+	<int:publish-subscribe-channel id="inbound.error.channel" />
+	
+	<int:inbound-channel-adapter id="starting.inbound.channel.adapter" channel="inbound.channel.start" auto-startup="${channel.status:true}" expression="10/2" >
+		<int:poller ref="channelPoller"/>
+	</int:inbound-channel-adapter>
+	
+	<int:service-activator id="app.test.service.activator" input-channel="inbound.channel.start" output-channel="inbound.channel.process" ref="testService" method="doTask" />
+	
+	<int:bridge id="service.activator.out.bridge" input-channel="inbound.channel.process" output-channel="inbound.channel.end" />
+	
+	<int:logging-channel-adapter id="output.logger" channel="inbound.channel.end" />
+	
+	<beans profile="corn">
+		<int:poller id="channelPoller" cron="${corn.expression:*/10 * * * * *}"  error-channel="inbound.error.channel" />
+	</beans>
+	
+	<beans profile="default">
+		<int:poller id="channelPoller" fixed-rate="${fixed.rate:5000}" error-channel="inbound.error.channel" />
+	</beans>
+</beans>

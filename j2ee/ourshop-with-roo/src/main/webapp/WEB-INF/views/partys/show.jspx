@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_ourshop_it_domain_Party" object="${party}" path="/partys" z="YhafaRa9y3sRHI00KPVjyWM9rHw=">
+        <field:display field="partyName" id="s_com_ourshop_it_domain_Party_partyName" object="${party}" z="EEJFtcsYP76Y4J1GzyREKz/3gsM="/>
+        <field:display field="govtRegistration" id="s_com_ourshop_it_domain_Party_govtRegistration" object="${party}" z="60CJLqybOfcSzMQAWJZsCEfBods="/>
+        <field:display field="address" id="s_com_ourshop_it_domain_Party_address" object="${party}" z="DOz2gb/tSzXpwkZiAZPwpXFWneM="/>
+        <field:display field="area" id="s_com_ourshop_it_domain_Party_area" object="${party}" z="xM1mjJ7+/Ne8cMYxrh7TdlqYq8c="/>
+        <field:display field="contactPerson" id="s_com_ourshop_it_domain_Party_contactPerson" object="${party}" z="4PdamGHLlSuDHhW1aNxsFnjkQtk="/>
+        <field:display field="partyType" id="s_com_ourshop_it_domain_Party_partyType" object="${party}" z="60tciR9fTPZhuO6xJSFLSY+chT4="/>
+        <field:display field="mobile" id="s_com_ourshop_it_domain_Party_mobile" object="${party}" z="pHWF54j9t4g2y8NT1CGtF+dFvLc="/>
+        <field:display field="phone" id="s_com_ourshop_it_domain_Party_phone" object="${party}" z="SKd8rneTyspdhP7GDAeRx9roU/I="/>
+        <field:display field="email" id="s_com_ourshop_it_domain_Party_email" object="${party}" z="JUTHJV9c/FNhiMKes306TLjO6Sc="/>
+        <field:display field="alternateEmail" id="s_com_ourshop_it_domain_Party_alternateEmail" object="${party}" z="RDdPW5ar0pDzB7F2vRyu2HHtVJo="/>
+    </page:show>
+</div>

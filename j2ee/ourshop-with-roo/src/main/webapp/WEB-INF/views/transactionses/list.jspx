@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_ourshop_it_domain_Transactions" items="${transactionses}" z="ZNVJtaJjjGnZhE2HEw+bG5I/jwY=">
+        <table:table data="${transactionses}" id="l_com_ourshop_it_domain_Transactions" path="/transactionses" z="59ha1+M6NkAfzV+Ch2CZkjq38yQ=">
+            <table:column date="true" dateTimePattern="${transactions_transactiondate_date_format}" id="c_com_ourshop_it_domain_Transactions_transactionDate" property="transactionDate" z="MwSZdbGRwdZBmv6YAtTmE2+ZteA="/>
+            <table:column id="c_com_ourshop_it_domain_Transactions_party" property="party" z="t9/qBUgMFkoK0YOfAE02SYFO7CA="/>
+            <table:column id="c_com_ourshop_it_domain_Transactions_account" property="account" z="h2zgnNZzeNUNi/TRoyhf37lhfNo="/>
+            <table:column id="c_com_ourshop_it_domain_Transactions_type" property="type" z="NH4JZ7b1K8RBEQg2rEYHD8A3+vE="/>
+            <table:column id="c_com_ourshop_it_domain_Transactions_inventories" property="inventories" z="B+0wrnCS6azZs92iUXupMbxnee0="/>
+            <table:column id="c_com_ourshop_it_domain_Transactions_description" property="description" z="J+4CZx3RqPGW+BYUFutB2nrXgfo="/>
+        </table:table>
+    </page:list>
+</div>

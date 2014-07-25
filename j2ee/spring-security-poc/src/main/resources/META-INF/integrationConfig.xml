@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:int-http="http://www.springframework.org/schema/integration/http"
+	xsi:schemaLocation="http://www.springframework.org/schema/integration/http http://www.springframework.org/schema/integration/http/spring-integration-http.xsd
+		http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="org.springframework.integration.core.MessagingTemplate" id="messagingTemplate">
+		<property name="defaultChannel" ref="test.defaultChannel" />
+	</bean>
+	
+<!-- 	<int:inbound-channel-adapter id="adapter"  auto-startup="true" expression="new java.lang.String('HELLO')" channel="test.defaultChannel">
+		<int:poller error-channel="errorChannel" fixed-rate="10" time-unit="SECONDS"></int:poller>
+	</int:inbound-channel-adapter> -->
+	
+	<int:channel id="test.defaultChannel" />
+	<int:channel id="test.logChannel" />
+	
+	<int-http:outbound-gateway request-channel="test.defaultChannel" reply-channel="test.logChannel" http-method="POST" url="http://localhost:8080/security/errorpage" />
+
+   <int:logging-channel-adapter channel="test.logChannel" level="DEBUG"></int:logging-channel-adapter>
+   
+   
+</beans>

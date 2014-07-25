@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_ourshop_it_domain_TransactionInventory" modelAttribute="transactionInventory" path="/transactioninventorys" versionField="Version" z="0V5UjGwyPCPKuWwKs07/DJRuDdg=">
+        <field:input field="quantity" id="c_com_ourshop_it_domain_TransactionInventory_quantity" required="true" validationMessageCode="field_invalid_number" z="XFuOXKWXx2iVl2GeADZyNNZ5fq0="/>
+        <field:input field="rate" id="c_com_ourshop_it_domain_TransactionInventory_rate" required="true" validationMessageCode="field_invalid_number" z="EKb+W4WeIkhSI7KRdymYC04t2vk="/>
+        <field:select field="items" id="c_com_ourshop_it_domain_TransactionInventory_items" itemValue="id" items="${inventorys}" multiple="true" path="/inventorys" z="J5gp0GtpyT1kV7DLWDMuoCzfbtA="/>
+    </form:update>
+</div>

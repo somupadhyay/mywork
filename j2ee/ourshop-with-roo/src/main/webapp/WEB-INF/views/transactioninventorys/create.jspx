@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_ourshop_it_domain_TransactionInventory" modelAttribute="transactionInventory" path="/transactioninventorys" render="${empty dependencies}" z="r1VKWn2/83F1Zf6XZimFkZEELL0=">
+        <field:input field="quantity" id="c_com_ourshop_it_domain_TransactionInventory_quantity" required="true" validationMessageCode="field_invalid_number" z="XFuOXKWXx2iVl2GeADZyNNZ5fq0="/>
+        <field:input field="rate" id="c_com_ourshop_it_domain_TransactionInventory_rate" required="true" validationMessageCode="field_invalid_number" z="EKb+W4WeIkhSI7KRdymYC04t2vk="/>
+        <field:select field="items" id="c_com_ourshop_it_domain_TransactionInventory_items" itemValue="id" items="${inventorys}" multiple="false" path="/inventorys" z="user-managed"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_ourshop_it_domain_TransactionInventory" render="${not empty dependencies}" z="P0Hk2xu1/S8Z6EXzuuzhUBqU2rg="/>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_ourshop_it_domain_Transactions" object="${transactions}" path="/transactionses" z="0VDg+xkSGNEeHFLsqF74FdUCB6Q=">
+        <field:display date="true" dateTimePattern="${transactions_transactiondate_date_format}" field="transactionDate" id="s_com_ourshop_it_domain_Transactions_transactionDate" object="${transactions}" z="KhwCei0aIPWstHj/tOA2jgRKjqo="/>
+        <field:display field="party" id="s_com_ourshop_it_domain_Transactions_party" object="${transactions}" z="8s48nH/pjd5QoZwhHHEMXBdXKI0="/>
+        <field:display field="account" id="s_com_ourshop_it_domain_Transactions_account" object="${transactions}" z="uummchgnmER8bXEDM3NoaYkSptw="/>
+        <field:display field="type" id="s_com_ourshop_it_domain_Transactions_type" object="${transactions}" z="/JcWZ1PeJvWBMF3boVD2asWAuxk="/>
+        <field:display field="inventories" id="s_com_ourshop_it_domain_Transactions_inventories" object="${transactions}" z="rrtTbm5U8WKKL0qsJP/vdpJXS50="/>
+        <field:display field="description" id="s_com_ourshop_it_domain_Transactions_description" object="${transactions}" z="n0owhG1hos5IJA5pWTDL0rx0F+g="/>
+        <field:display field="totalAmount" id="s_com_ourshop_it_domain_Transactions_totalAmount" object="${transactions}" z="kljEcoCt0KFrABz6qF8nampqUjk="/>
+        <field:display field="advanceAmount" id="s_com_ourshop_it_domain_Transactions_advanceAmount" object="${transactions}" z="F8Yx7R6UNb3UFKwL+wP3wThreZ0="/>
+        <field:display field="discountAmount" id="s_com_ourshop_it_domain_Transactions_discountAmount" object="${transactions}" z="pvbXmWl2KVVfusLRZAJJUVzSU4E="/>
+        <field:display field="dueAmount" id="s_com_ourshop_it_domain_Transactions_dueAmount" object="${transactions}" z="WZcc/ovsr1CH02RSoe/qyB6BEoU="/>
+    </page:show>
+</div>

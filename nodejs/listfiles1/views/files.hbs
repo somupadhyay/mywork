@@ -1,0 +1,10 @@
+{{#if files.length}}
+<ul>
+  <li><a href="/listDir">HOME</a></li>
+  {{#each files}}
+  <li><a href="getDetails.js?path={{../parentDir}}{{this}}">{{../parentDir}}{{this}}</a></li>
+  {{/each}}
+</ul
+{{else}}
+{{{content}}}
+{{/if}}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_ourshop_it_domain_Party" items="${partys}" z="Chdvct6GAfViBQumZLVCq3PdqcM=">
+        <table:table data="${partys}" id="l_com_ourshop_it_domain_Party" path="/partys" z="Cppq4ruspIaGL3KQis4Xepn98uw=">
+            <table:column id="c_com_ourshop_it_domain_Party_partyName" property="partyName" z="b+vi1eFbJfONeZuMVB4VaFmmqxk="/>
+            <table:column id="c_com_ourshop_it_domain_Party_govtRegistration" property="govtRegistration" z="8o1EINp/I9WGTpbAHiAK2zf6qUA="/>
+            <table:column id="c_com_ourshop_it_domain_Party_address" property="address" z="7Vatud6LVp6v3pILXDs0JAHdoQM="/>
+            <table:column id="c_com_ourshop_it_domain_Party_area" property="area" z="tzUBLgmIifOXaFT6g38BJijLdjA="/>
+            <table:column id="c_com_ourshop_it_domain_Party_contactPerson" property="contactPerson" z="uBOUPYO+lSutbVUsDEAyCG4THg0="/>
+            <table:column id="c_com_ourshop_it_domain_Party_partyType" property="partyType" z="OKz+P9ZNeaU8xps65Vy50iEiOKI="/>
+        </table:table>
+    </page:list>
+</div>
