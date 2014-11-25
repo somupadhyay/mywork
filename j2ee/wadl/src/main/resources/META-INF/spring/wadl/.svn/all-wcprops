@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esprepo/!svn/ver/10144/trunk/common/services/utils/rest-utils/wadl-generator/src/main/resources/META-INF/spring/wadl
+END
+bindings.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esprepo/!svn/ver/10144/trunk/common/services/utils/rest-utils/wadl-generator/src/main/resources/META-INF/spring/wadl/bindings.xjb
+END
+xml.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esprepo/!svn/ver/10144/trunk/common/services/utils/rest-utils/wadl-generator/src/main/resources/META-INF/spring/wadl/xml.xsd
+END
+wadl.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esprepo/!svn/ver/10144/trunk/common/services/utils/rest-utils/wadl-generator/src/main/resources/META-INF/spring/wadl/wadl.xsd
+END
