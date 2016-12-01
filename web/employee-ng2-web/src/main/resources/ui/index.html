@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+    <title>newfamily-example</title>
+    <base href="/index"/>
+<link href="../css/styles.css" rel="stylesheet" type="text/css"></link>
+<style>
+  input.ng-invalid{
+    background-color: red;
+}
+  </style>
+    <!-- 1. Load libraries -->
+    <script src="libs/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="libs/systemjs/dist/system.src.js"></script>
+    <script src="libs/rxjs/bundles/Rx.js"></script>
+    <script src="libs/angular2/bundles/angular2.dev.js"></script>
+    <script src="libs/angular2/bundles/router.dev.js"></script>
+<script src="libs/angular2/bundles/http.dev.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/bootstrap')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+     <!--<a [routerLink]="['Userform']" href="#/Userform">user form</a>
+     <a [routerLink]="['about']" href="#/about">about</a>
+     <a [routerLink]="['Yahoo']" href="#/yahoo" >yahoo</a>-->
+    <top-container>Loading...</top-container>
+    <test></test>
+    <!--<basic-component></basic-component>-->
+  </body>
+</html>

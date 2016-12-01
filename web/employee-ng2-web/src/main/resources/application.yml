@@ -1,0 +1,16 @@
+---
+spring:
+  profiles.active: local
+
+---
+spring:
+  profiles: local
+  datasource:
+    driverClassName: org.hsqldb.jdbcDriver
+    url: jdbc:hsqldb:file:ng2ds;shutdown=true
+    username: sa
+    password: 
+  jpa:
+    hibernate.ddl-auto: create-drop    
+    hibernate.dialect: org.hibernate.dialect.HSQLDialect    
+    show_sql: true
