@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: demoConfig
+  cloud:
+    config:
+      uri: ${vcap.services.configserver.credentials.uri:http://configuser:configpaas@localhost:8888}
+  aop:
+    proxy-target-class: true
