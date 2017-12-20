@@ -1,0 +1,66 @@
+One View Consolidated one.
+	
+1) Foundation comparision but not the cost vs usages.
+2) Display the to the date Cost and Usages.
+3) Display the history of each. 
+4) Display One Billing Item (Org/Apache/DB). 
+5) Cost Roll up/ the summary part of it.
+
+6) What to display
+For Cost/Usage we should use Bar as it displays data at the point not how it is derieved to.
+
+7) Drill Down level.
+	Org
+	  -> Space
+	      -> Apps and Services.
+		  
+8) Export functionality.
+9) User will get all the billing items once he logs in.
+10) Each foundation report.
+    LEMC -> 
+	
+CostCentre, and Org Description
+	
+	
+App Dynamics.
+Crash Reports.
+Trending Crash.
+Notification.
+	
+Release Date 11th December 2017 for Billing version 1.0 -
+
+string reverse.
+springs' different annotation / steriotypes and why.
+two thread one to print odd and one to print even in sequence.
+what is oops concept.
+what is encapsulation and abastraction.
+what is what is the difference between the arraylist and linkedlist.
+why use collection when we can do things in array.
+
+https://emccloudfoundry.isus.emc.com/pcf/api/billing/org/AICS360Org/cost/extcomp/detail/daterange?fromdate=2017-12-01%2000:00:00&todate=2017-12-31%2023:59:59&platform=DEV
+https://emccloudfoundry.isus.emc.com/pcf/api/billing/org/AICS360Org/cost/extcomp/summary/daterange?fromdate=2017-12-01%2000:00:00&todate=2017-12-31%2023:59:59
+
+
+https://accesstobusiness.snsmr.gov.ns.ca/a2b_web/immigration/startUp.jsf
+
+https://password.dell.com/QPMUser/
+
+
+CpePcfEMCDev
+CpePcfEMCTest
+CpePcfEMCProd
+CpePcfDellNonProd
+CpePcfDellPC1
+CpePcfDellS3B
+
+
+cpeorguser
+
+https://github.com/itmuch/spring-cloud-docker-microservice-book-code/tree/master/microservice-gateway-zuul-file-upload
+https://github.com/itmuch/spring-cloud-docker-microservice-book-code/tree/master/microservice-gateway-zuul-file-upload/src/main
+
+https://pcf-billing-api-dev.cfapps.pcf1.vc1.pcf.dell.com/
+https://pcf-billing-api-tst.cfapps.pcf1.vc1.pcf.dell.com/
+https://pcf-billing-api-prd.ausvpc01.pcf.dell.com/
+
+https://github.com/pivotal-cf/spring-cloud-sso-connector/
