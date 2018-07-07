@@ -67,9 +67,29 @@ testem.log
 /typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+**/e2e/*.js
+**/e2e/*.map
 
 # System Files
 .DS_Store
 Thumbs.db
+
+# dependencies
+**/node_modules
+
+# testing
+/coverage
+
+# production
+**/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
