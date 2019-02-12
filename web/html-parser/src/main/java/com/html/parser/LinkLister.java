@@ -21,8 +21,8 @@ public class LinkLister {
 	 * @param args
 	 * @throws IOException 
 	 */
-	private static final String []baseUrls = {"http://intintqas17.isus.emc.com:8080"/*,"http://intintqas18.isus.emc.com:8080"*/};
-	private static final String context = "/ciclogs/9091.jsp";
+	private static final String []baseUrls = {"http://somehost.com:8080"/*,"http://somehost.com:8080"*/};
+	private static final String context = "/somelog/9091.jsp";
 	private static final String expression = ".log";
 	private static final String CAUSED_BY = "Caused by:";
 	private static final String ERROR_EXPRESSION = "ERROR";
@@ -30,30 +30,7 @@ public class LinkLister {
 	private static String baseUrl="";
 	
 	static{
-		LOGLOCATIONS.add("[contract-rsascol-consumer-sap]");
-		LOGLOCATIONS.add("[customer-rsa-consumer-scol]");
-		LOGLOCATIONS.add("[ibasesn-rsa-consumer-scol]");
-		LOGLOCATIONS.add("[salesorder-rsa-consumer-scol]");
-		LOGLOCATIONS.add("[versionupgrade-rsascol-consumer-sap]");
-		LOGLOCATIONS.add("[customer-rsa-consumer-sfdc]");
-		LOGLOCATIONS.add("[ibasesn-rsa-consumer-sfdc]");
-		LOGLOCATIONS.add("[salesorder-rsa-consumer-sfdc]");
-		LOGLOCATIONS.add("[shipment-rsa-consumer-sfdc]");
-		LOGLOCATIONS.add("[salesorder-rsa-consumer-sds]");
-		LOGLOCATIONS.add("[salesorderIE60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[salesorderUS60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[seeddelconfirmIE60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[seeddelconfirmUS60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[seeddeletion-rsa-consumer-sds]");
-		LOGLOCATIONS.add("[seeddelIE60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[seeddelUS60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[tokenwarrantyIE60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[tokenwarrantyUS60-rsasds-consumer-sap]");
-		LOGLOCATIONS.add("[computerid-rsadlc-consumer-sap]");
-		LOGLOCATIONS.add("[shipment-rsa-consumer-dlc]");
-		LOGLOCATIONS.add("[shipment-rsa-consumer-lc]");
-		LOGLOCATIONS.add("[shipment-rsa-consumer-lt]");
-		LOGLOCATIONS.add("[tokenpack-rsadlc-consumer-sap]");
+		LOGLOCATIONS.add("[some-location]");
 	}
 	//.log
 	

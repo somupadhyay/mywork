@@ -16,7 +16,7 @@ import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
 
 /**
- * @author upadhs5
+ * @author somnath
  *
  */
 @EnableWs

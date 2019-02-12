@@ -2,19 +2,6 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
-	<!-- Appenders -->
-	<appender name="file" class="com.emc.it.eis.common.logging.RollingZipFileAppender">
-		<param name="file"
-			value="${catalina.base}/logs/pushnotification-service-mobile/pushnotification-service-mobile.log" />
-		<param name="MaxFileSize" value="5120KB" />
-
-		<!-- Keep up to 15 files since each one will zip to ~600K -->
-		<param name="MaxBackupIndex" value="10" />
-		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="[%d{dd.MM.yyyy HH:mm:ss}] %p: %c{1}.%M() - %m%n" />
-		</layout>
-	</appender>
-
 	<!-- Loggers -->
 	<logger name="org.springframework.beans">
 		<level value="warn" />
@@ -40,14 +27,10 @@
 		<level value="debug" />
 	</logger>
 	
-	<logger name="com.emc.it.eis">
-		<level value="debug" />
-	</logger>
-
 	<!-- Root Logger -->
 	<root>
 		<priority value="warn" />
-		<appender-ref ref="file" />
+		<appender-ref ref="console" />
 	</root>
 
 </log4j:configuration>

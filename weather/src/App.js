@@ -70,15 +70,14 @@ class App extends Component {
     <Row>
       <Col md={4} sm={4}>
         <h3>Select a city</h3>
-        <Nav
-          bsStyle="pills"
+        <Nav bsStyle="pills" stacked
           activeKey={activePlace}
           onSelect={index => {
             this.setState({ activePlace: index });
           }}
         >
           {PLACES.map((place, index) => (
-            <NavItem key={index} eventKey={index}>{place.name}</NavItem>
+            <NavItem href="#" key={index} eventKey={index}>{place.name}</NavItem>
           ))}
         </Nav>
       </Col>

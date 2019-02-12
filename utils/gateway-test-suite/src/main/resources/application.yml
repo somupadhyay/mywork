@@ -2,9 +2,9 @@
 spring:
   profiles: default
 l7.gateway: 
-  node1: http://ssgosgdev02.isus.emc.com:8081
-  node2: http://ssgosgdev03.isus.emc.com:8081
-  nodelb: https://ssgosgdev.isus.emc.com
+  node1: http://somehost.one.com:8081
+  node2: http://somehost.two.com:8081
+  nodelb: https://somehost.com
 
 server:
   port: 14325  

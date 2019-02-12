@@ -6,8 +6,8 @@
   <packaging>war</packaging>
   
   <parent>
-		<groupId>com.emc.it.eis</groupId>
-		<artifactId>cic-parent</artifactId>
+		<groupId>org.test.test</groupId>
+		<artifactId>some-parent</artifactId>
 		<version>2-SNAPSHOT</version>
 	</parent>
 

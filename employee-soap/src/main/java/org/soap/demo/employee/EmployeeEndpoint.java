@@ -18,7 +18,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author upadhs5
+ * @author somnath
  *
  */
 @Endpoint

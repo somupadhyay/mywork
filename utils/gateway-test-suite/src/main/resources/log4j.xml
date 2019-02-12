@@ -15,7 +15,7 @@
 		<level value="warn" />
 	</logger>
 	
-	<logger name="com.emc.it.cpe.l7.*">
+	<logger name="org.gateway.test.suite.*">
 		<level value="debug" />
 	</logger>
 
